@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="upload_box">
+            <i class="bi bi-download icon"></i>
+            <input type="file" id="file" class="inputfile" accept="image/*" multiple>
+            <label for="file"><strong>Choose file</strong> or drag it here</label>
+            <p class="fileCounter hidden"></p>
+            <button type="submit" class="submit_btn hidden">Submit</button>
+        </div>
+        <ul class="uploaded_files hidden">
+        </ul>
+    </form>
+    <div class="overlay hidden">
+        <div class="preview">
+            <button class="close" onclick="closeModal()">&times;</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
